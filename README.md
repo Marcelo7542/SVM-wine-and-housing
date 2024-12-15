@@ -45,6 +45,8 @@ Resultados:
 O modelo obteve uma acurácia de 97.77%, o que mostra um bom desempenho na tarefa de distinguir o dígito "3" de outros dígitos.
 
 
+
+
 SVM-Wine
 
 No arquivo SVM-Wine, utilizei o conjunto de dados Wine do sklearn.datasets.load_wine().
@@ -109,6 +111,10 @@ Grau do polinômio: 4
 Valor de C: 0.80
 
 Valor de gama: 0.12
+
+
+
+
 
 SVM-Housing
 
@@ -193,6 +199,9 @@ svr__epsilon: 0.427
 
 
 
+
+
+
 This repository contains implementations of Support Vector Machines (SVM) for solving classification and regression problems on various datasets.
 
 The repository is divided into three files: 
@@ -239,6 +248,7 @@ The model achieved an accuracy of 97.77%, demonstrating excellent performance in
 
 
 SVM-Wine
+
 In the SVM-Wine file, the Wine dataset from sklearn.datasets.load_wine() was used.
 This dataset contains information on the chemical composition of wines produced by three different cultivators.
 The goal was to train an SVM model to classify wines based on their chemical properties in a multi-class classification problem.
@@ -284,22 +294,32 @@ Confusion matrices were generated to compare predictions with true labels.
 Results:
 
 LinearSVC:
+
 MSE: 0.055
 Delivered good classification performance.
+
 SVC with RBF Kernel:
+
 Achieved 100% accuracy on the test data, indicating outstanding multi-class classification performance.
+
 Best Parameters:
 
 LinearSVC:
 
 Polynomial Degree: 5
+
 Penalty: L1
+
 C: 0.92
+
 SVC:
 
 Kernel: RBF
+
 Polynomial Degree: 4
+
 C: 0.80
+
 Gamma: 0.12
 
 
@@ -307,6 +327,7 @@ Gamma: 0.12
 
 
 SVM-Housing
+
 In the SVM-Housing file, the California Housing dataset was used, which contains information about housing prices in California.
 The goal was to train an SVM regression model to predict house prices based on features like location and demographics.
 
@@ -352,19 +373,30 @@ Results:
 LinearSVR:
 
 Best MSE: 0.554
+
 Best Parameters:
+
 polynomialfeatures__degree: 1
+
 linearsvr__epsilon: 0.943
+
 linearsvr__tol: 0.01415
+
 linearsvr__C: 1.66
+
 linearsvr__loss: epsilon_insensitive
 
 
 SVR:
 
 Best MSE: 0.300
+
 Best Parameters:
+
 svr__kernel: RBF
+
 svr__C: 7.19
+
 svr__gamma: 0.316
+
 svr__epsilon: 0.427
